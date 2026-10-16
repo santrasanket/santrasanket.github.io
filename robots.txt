@@ -1,5 +1,5 @@
 # ============================================================
-# robots.txt - sanketsantra.github.io
+# robots.txt - santrasanket.github.io
 # Policy: allow all major search and AI crawlers through ONE
 # default rule. Block admin/internal/gated paths and signed-link
 # parameters. Explicitly block known bandwidth-waster bots.
@@ -30,4 +30,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sanketsantra.github.io/sitemap.xml
+Sitemap: https://santrasanket.github.io/sitemap.xml
