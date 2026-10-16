@@ -1,0 +1,33 @@
+# ============================================================
+# robots.txt - sanketsantra.github.io
+# Policy: allow all major search and AI crawlers through ONE
+# default rule. Block admin/internal/gated paths and signed-link
+# parameters. Explicitly block known bandwidth-waster bots.
+# ============================================================
+
+# ---------- Default rule (governs EVERY crawler) ----------
+# Most bots obey only the group whose name matches them. A bot that
+# finds its own "User-agent:" group ignores the wildcard group
+# entirely - so a per-bot "Allow: /" block silently CANCELS the
+# Disallow lines below for that bot. That is why there are no
+# per-bot Allow groups here. One wildcard group keeps the rules
+# consistent for everyone.
+#
+# Crawlers permitted by this rule (non-exhaustive):
+#   Search:  Googlebot, Bingbot, DuckDuckBot, Yandex, Baiduspider,
+#            Applebot, YouBot
+#   AI:      GPTBot, OAI-SearchBot, ChatGPT-User (OpenAI);
+#            ClaudeBot, Claude-Web, anthropic-ai (Anthropic);
+#            Google-Extended (Gemini training);
+#            PerplexityBot, Perplexity-User;
+#            Meta-ExternalAgent, Meta-ExternalFetcher, FacebookBot;
+#            xAI, Grok; CCBot (Common Crawl);
+#            cohere-ai, cohere-training-data-crawler;
+#            MistralAI-User; Bytespider; Amazonbot;
+#            Applebot-Extended; Diffbot; DeepSeek (generic UA)
+#   SEO:     AhrefsBot, SemrushBot
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sanketsantra.github.io/sitemap.xml
